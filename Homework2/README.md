@@ -1,5 +1,5 @@
 # Homework 2
 
-Bu klasör **CMPE 472 — Homework 2** için ayrılmıştır.
+This folder is reserved for **CMPE 472 — Homework 2**.
 
-> 📌 Ödev dosyaları henüz eklenmedi. Çalışma tamamlandığında bu klasöre yüklenecektir.
+> Homework files have not been added yet. They will be uploaded to this folder once the work is complete.

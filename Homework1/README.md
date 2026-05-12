@@ -1,33 +1,33 @@
 # Homework 1 — Weather Temperature Guessing Game (TCP Socket)
 
-CMPE 472 ödev 1 kapsamında geliştirilen, **TCP soketleri** kullanan bir istemci–sunucu uygulaması.
+A TCP client–server application developed for CMPE 472 Homework 1.
 
-## 🎯 Amaç
+## Goal
 
-Sunucu, `weathers.xlsx` dosyasından **rastgele bir şehir** seçer ve istemciden o şehrin sıcaklığını **3 deneme** içinde tahmin etmesini bekler. İstemci her tahminin ardından `Higher` / `Lower` ipuçları alır. Tahmin, gerçek değerin **±%10 toleransı** içindeyse başarılı sayılır.
+The server picks a **random city** from `weathers.xlsx` and asks the client to guess that city's temperature within **3 attempts**. After each guess, the client receives a `Higher` / `Lower` hint. A guess is accepted as correct when it falls within a **±10% tolerance** of the actual value.
 
-## 📁 Dosyalar
+## Files
 
-| Dosya | Açıklama |
+| File | Description |
 | --- | --- |
-| `server.py` | `localhost:8888` üzerinde dinleyen, Excel'den şehir seçip oyunu yöneten sunucu. |
-| `client.py` | Sunucuya bağlanıp kullanıcıdan tahmin alan istemci. |
-| `weathers.xlsx` | Şehir (`City`) ve sıcaklık (`Temp`) sütunlarını içeren veri kaynağı. |
-| `CMPE472_HW1EnginSametDedeSection1.pdf` | Ödev raporu. |
+| `server.py` | Listens on `localhost:8888`, picks a city from the Excel file, and manages the game. |
+| `client.py` | Connects to the server and takes guesses from the user. |
+| `weathers.xlsx` | Data source with `City` and `Temp` columns. |
+| `CMPE472_HW1EnginSametDedeSection1.pdf` | Homework report. |
 
-## 🚀 Çalıştırma
+## How to Run
 
 ```bash
-# 1) Sunucuyu başlat
+# 1) Start the server
 python server.py
 
-# 2) Yeni bir terminalde istemciyi çalıştır
+# 2) In a new terminal, run the client
 python client.py
 ```
 
-İstemci tarafında istendiğinde sıcaklık tahmininizi girin. Oyunu sonlandırmak için `END` yazabilirsiniz.
+When prompted, enter your temperature guess. Type `END` to terminate the session.
 
-## 📦 Gereksinimler
+## Requirements
 
 ```bash
 pip install pandas openpyxl

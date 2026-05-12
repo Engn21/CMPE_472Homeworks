@@ -1,37 +1,37 @@
 # CMPE 472 — Homeworks
 
-Bu repo, **CMPE 472 (Bilgisayar Ağları)** dersi kapsamında verilen ödevlerimin çözümlerini ve ilgili dosyalarını içerir.
+This repository contains my homework solutions and related files for the **CMPE 472 (Computer Networks)** course.
 
-## 👤 Öğrenci Bilgileri
+## Student Information
 
-- **Ad Soyad:** Engin Samet Dede
-- **Bölüm / Section:** 1
-- **Ders:** CMPE 472 — Computer Networks
+- **Name:** Engin Samet Dede
+- **Section:** 1
+- **Course:** CMPE 472 — Computer Networks
 
-## 📂 İçerik
+## Contents
 
-| Klasör | Açıklama |
+| Folder | Description |
 | --- | --- |
-| [Homework1](./Homework1) | Socket programlama: TCP istemci–sunucu uygulaması ile hava durumu (weather) verilerinin sorgulanması. |
-| [Homework2](./Homework2) | (Yakında eklenecek) İkinci ödev dosyaları. |
+| [Homework1](./Homework1) | Socket programming: a TCP client–server application for querying weather data. |
+| [Homework2](./Homework2) | (Coming soon) Files for the second homework. |
 
-## 🛠️ Kullanılan Teknolojiler
+## Technologies Used
 
-- **Python 3** — socket, threading, pandas / openpyxl
-- **Excel (.xlsx)** — veri kaynağı olarak
+- **Python 3** — `socket`, `threading`, `pandas` / `openpyxl`
+- **Excel (.xlsx)** — used as the data source
 
-## 🚀 Çalıştırma
+## How to Run
 
-Her ödev klasörünün içinde ilgili dosyalar ve gerekiyorsa kendi açıklaması yer alır. Ödev için:
+Each homework folder contains its own files and, where needed, its own README. For Homework 1:
 
 ```bash
-# Sunucuyu başlat
+# Start the server
 python server.py
 
-# Yeni bir terminalde istemciyi çalıştır
+# In a new terminal, run the client
 python client.py
 ```
 
-## 📜 Lisans
+## License
 
-Bu repo yalnızca akademik amaçlarla, ödev teslim sürecini takip etmek için oluşturulmuştur.
+This repository is intended solely for academic purposes — tracking homework submissions for the course.
